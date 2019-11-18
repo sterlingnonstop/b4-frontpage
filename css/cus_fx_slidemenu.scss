@@ -1,83 +1,90 @@
-.menu-overlay {
-  background-color: gray;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  display: none;
-  -webkit-transition: height 0s, opacity 0.3s;
-  transition: height 0s, opacity 0.3s;
-}
+$color-menu-slide: #fffff0;
+$dur-menu-slide:.3s;
+$width-view-md:768px;
 
-@media (max-width: 768px) {
-  .ins-main-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-transition-duration: 0s;
-            transition-duration: 0s;
-  }
-  .ins-main-menu .menu-warpper {
-    position: absolute;
-    display: block;
-    width: 70%;
-    max-width: 15rem;
-    height: 100%;
-    overflow-y: scroll;
-    scrollbar-width: none;
-    -webkit-box-shadow: 5px 0 5px rgba(0, 0, 0, 0.15);
-    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.15);
-    background-color: #fffff0;
-    -webkit-transition: left 0.3s;
-    transition: left 0.3s;
-  }
-  .ins-main-menu.collapse .menu-warpper {
-    display: none;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  .ins-main-menu.collapse .menu-overlay {
-    opacity: 0;
-    display: block;
-  }
-  .ins-main-menu.collapsing .menu-warpper {
-    display: block;
-    left: -70vw;
-    -webkit-transition: left 0.3s;
-    transition: left 0.3s;
-  }
-  .ins-main-menu.collapsing .menu-overlay {
-    opacity: 0;
-    display: block;
-  }
-  .ins-main-menu.collapse.show .menu-warpper {
-    display: block;
-    left: 0;
-    -webkit-transition: left 0.3s;
-    transition: left 0.3s;
-  }
-  .ins-main-menu.collapse.show .menu-overlay {
-    opacity: .3;
-    display: block;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-  }
-  .ins-main-menu .menu-title {
-    height: 2rem;
-  }
-  .ins-main-menu .menu-title button.close {
-    width: 2rem;
-    height: 2rem;
-    line-height: 2rem;
-    text-align: center;
-    background: white;
-  }
-  .ins-main-menu .menu-title button.close svg {
-    width: 1rem;
+.menu-overlay{
+    background-color:gray;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    opacity:0;
+    display:none;
+    transition: height 0s, opacity $dur-menu-slide;
+ }
+
+ @media (max-width: $width-view-md) {
+  .ins-main-menu{ 
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transition-duration: 0s;
+
+    .menu-warpper{
+        position:absolute;
+        display:block;
+        width:70%;
+        max-width:15rem;
+        height:100%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -webkit-box-shadow: 5px 0 5px rgba(0,0,0,.15);
+        -moz-box-shadow: 5px 0 5px rgba(0,0,0,.15);
+        box-shadow: 5px 0 5px
+        rgba(0,0,0,.15);        
+        background-color:$color-menu-slide;
+        transition:left $dur-menu-slide;
+    }
+    &.collapse{
+        .menu-warpper{
+            display:none;
+            transition: $dur-menu-slide;
+        }
+        .menu-overlay{
+            opacity:0;
+            display:block;
+         }
+    }
+    &.collapsing{
+        .menu-warpper{
+            display:block;
+            left:-70vw;
+            transition:left $dur-menu-slide;
+        }
+        .menu-overlay{
+            opacity:0;
+            display:block;
+         }
+    }
+    &.collapse.show{
+        .menu-warpper{
+            display:block;
+            left:0;
+            transition:left $dur-menu-slide;
+        }
+       .menu-overlay{
+          opacity:.3;
+          display:block;
+          transition: opacity $dur-menu-slide;
+       }
+    }
+
+    .menu-title{
+        height:2rem;
+        button.close{
+            width: 2rem;
+            height: 2rem;
+            line-height: 2rem;
+            text-align: center;
+            background:white;
+            svg{
+                width:1rem;
+            }
+        }
+    }
+
   }
 }
-/*# sourceMappingURL=cus_fx_slidemenu.css.map */
