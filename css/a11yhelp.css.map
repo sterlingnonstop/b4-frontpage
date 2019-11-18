@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA;;;;;;;EAOE;AAEF,AACI,QADI,CACJ,CAAC,AAAA,aAAa,AAAA,MAAM,CAAA;EAChB,gBAAgB,EAAC,KAAK;EACtB,KAAK,EAAC,KAAK;CACd",
+    "sources": [
+        "a11yhelp.scss"
+    ],
+    "names": [],
+    "file": "a11yhelp.css"
+}

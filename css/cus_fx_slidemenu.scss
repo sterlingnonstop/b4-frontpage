@@ -85,6 +85,17 @@ $width-view-md:768px;
             }
         }
     }
-
+    .ins-nav {
+        .ins-nav-link {
+            color:black;
+        }
+        .nav-item:hover{
+            background-color: #f58634;
+            transition-duration: 0;
+            .ins-nav-link{
+                color:white;
+            }
+        }
+    }
   }
 }

@@ -1,0 +1,13 @@
+/*
+:focus {
+    outline: 2px dashed #ff3399;
+  }
+.dark:focus {
+    outline: 2px dashed white;
+}
+*/
+.ins-nav a.ins-nav-link:focus {
+  background-color: white;
+  color: black;
+}
+/*# sourceMappingURL=a11yhelp.css.map */
