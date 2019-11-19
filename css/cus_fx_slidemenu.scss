@@ -71,7 +71,6 @@ $width-view-md:768px;
           transition: opacity $dur-menu-slide;
        }
     }
-
     .menu-title{
         height:2rem;
         button.close{
@@ -86,14 +85,22 @@ $width-view-md:768px;
         }
     }
     .ins-nav {
+        list-style:none;
         .ins-nav-link {
             color:black;
+            margin-left:0;
+            &::before{
+                padding-left:1rem;
+                padding-right:1rem;
+                content:"》";
+            }
         }
         .nav-item:hover{
             background-color: #f58634;
             transition-duration: 0;
             .ins-nav-link{
                 color:white;
+                text-decoration: none;
             }
         }
     }
