@@ -72,11 +72,21 @@ $width-view-md:768px;
        }
     }
     .menu-title{
-        height:2rem;
+        background-color:#5e7163;
+        color:white;
+        height:3rem;
+        font-size:1.5rem;
+        font-weight:400;
+        line-height:3rem;
+        i.fas{
+            margin-left:.6rem;
+            margin-right:.6rem;
+        }
+
         button.close{
-            width: 2rem;
-            height: 2rem;
-            line-height: 2rem;
+            width: 3rem;
+            height: 3rem;
+            line-height: 3rem;
             text-align: center;
             background:white;
             svg{
@@ -89,18 +99,25 @@ $width-view-md:768px;
         .ins-nav-link {
             color:black;
             margin-left:0;
-            &::before{
-                padding-left:1rem;
-                padding-right:1rem;
-                content:"》";
-            }
+            //&::before{
+                //padding-left:1rem;
+                //padding-right:1rem;
+                //content:"》";
+            //}
+            /*--use fa fa icon--*/
+            i.fas{padding-left:1rem;padding-right:1rem;}
         }
-        .nav-item:hover{
-            background-color: #f58634;
-            transition-duration: 0;
-            .ins-nav-link{
+        //.nav-item:hover{
+        .nav-item{
+            //background-color: #f58634;
+            //transition-duration: 0;
+            .ins-nav-link:hover,.ins-nav-link:focus{
+                display:block;
+                margin-right:0;
+                background-color:#f58634;
                 color:white;
                 text-decoration: none;
+                transition-duration: 0;
             }
         }
     }
