@@ -70,7 +70,7 @@ noscript, .noscript{
 
 /*------Elements---------*/
 .ins-logo-image-fluid{
-    width:300px;
+    width:auto;
     max-width: 100%;
     height: auto;    
 }
@@ -80,7 +80,12 @@ noscript, .noscript{
     width:100%;
     text-align:right;
     margin-right:1rem;
+    .brik-top-main{
+        display:inline-block;
+    }
+
     ul{
+        display:inline-block;
         margin: 0;padding: 0;border: 0;border-radius: 0;list-style: none;background-color:transparent;
         font-size: .9rem;
         font-weight: 400;
@@ -88,14 +93,16 @@ noscript, .noscript{
         li { 
             display: inline-block; 
             border-left: 1px solid #c0c0c0;
-            padding-left:.8rem;
-            padding-right:.8rem;
             a{
+                padding-left:.8rem;
+                padding-right:.8rem;
                 color:black;
                 &:hover{
                     color:black;
                 }
                 &:focus{
+                    display:inline-block;
+                    width:100%;
                     background-color:black;
                     color:white;
                 }
@@ -176,11 +183,16 @@ noscript, .noscript{
               list-style:none;
               display:block;
               line-height:1.6rem;
-              a:focus{
-                color:white;
-                outline-color:#EDE574;
-                outline-width: 3px;
-                outline-style: dotted;
+              a{
+                display:inline-block;
+                width:100%;
+                &:focus{
+                    color:black;
+                    outline-color:#EDE574;
+                    outline-width: 3px;
+                    outline-style: dotted;
+                    background-color:white;
+                  }
               }          
            }
         }
