@@ -1,0 +1,87 @@
+html{
+    &.a11y-font-lg{
+        font-size:120%;
+    }
+    &.a11y-font-sm{
+        font-size:80%;
+    }
+}
+
+body{
+    font-family:Helvetica, Arial,'微軟正黑體', sans-serif;
+}
+
+.ins-block-head{
+    .path-string{
+        font-size:1rem;
+    }
+    .title-text{
+        display:inline-block;
+        margin-bottom: 0;
+    }
+    .section-text{
+        font-size:1.6rem;
+        line-height:1.6em;
+        margin:0;
+        &::before{
+            display: inline-block;
+            height: 1em;
+            width: 1em;
+            margin-right: .2em;
+            content: ' ';
+            background-image: url("icon_ins_dot.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            vertical-align: sub;
+        }
+    }
+    hr{
+        border: none;
+        height: 2px;
+        color:gray;
+        margin-top: .4rem;
+        margin-bottom: .4rem;
+        background-color:#ddd;
+    }
+}
+
+.mark-h2{
+    display:inline-block;
+    &.mark-h2-signup::before{
+        background-image:url('/images/icon-h2-signup.svg');
+    }
+    &.mark-h2-search::before{
+        background-image:url('/images/icon-h2-search.svg');
+    }
+    &.mark-h2-report::before{
+        background-image:url('/images/icon-h2-report.svg');
+    }
+    &.mark-h2-qa::before{
+        background-image:url('/images/icon-h2-qa.svg');
+    }
+    &.mark-h2-members::before{
+        background-image:url('/images/icon-h2-members.svg');
+    }
+    &.mark-h2-login::before{
+        background-image:url('/images/icon-h2-login.svg');
+    }
+    &.mark-h2-links::before{
+        background-image:url('/images/icon-h2-links.svg');
+    }
+    &.mark-h2-download::before{
+        background-image:url('/images/icon-h2-download.svg');
+    }
+    &::before{
+        display:inline-block;
+        content:' ';
+        width:1em;
+        height:1em;
+        margin-right:.4em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size:cover;
+        vertical-align: sub;
+    }    
+}
+
