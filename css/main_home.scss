@@ -1,3 +1,12 @@
+html{
+    &.a11y-font-lg{
+        font-size:120%;
+    }
+    &.a11y-font-sm{
+        font-size:80%;
+    }
+}
+
 body{
     font-family:Helvetica, Arial,'微軟正黑體', sans-serif;
     //background-color:#f7f3e6;
