@@ -83,12 +83,24 @@ noscript, .noscript{
     max-width: 100%;
     height: auto;    
 }
-
+.brik-font{
+    //font-weight:bold;
+    color:gray;
+ }
+.ins-back-top{
+    display: inline-block;
+    background-color:rgba(255,255,255,.2);
+    border-radius: .4rem .4rem 0 0;
+    padding: 1em;
+    color:white;
+    &:hover,&:focus{
+        background-color:white;
+        color:black !important;
+    }
+}
 /*------Blocks-----------*/
 .toplink{
-    width:100%;
     text-align:right;
-    margin-right:1rem;
     .brik-top-main{
         display:inline-block;
     }
@@ -102,6 +114,9 @@ noscript, .noscript{
         li { 
             display: inline-block; 
             border-left: 1px solid #c0c0c0;
+            &:last-child{
+                border-right:1px solid #c0c0c0;
+            }
             a{
                 padding-left:.8rem;
                 padding-right:.8rem;
