@@ -8,7 +8,9 @@ html{
 }
 
 body{
-    font-family:Helvetica, Arial,'微軟正黑體', sans-serif;
+    //font-family:Helvetica, Arial,'微軟正黑體', sans-serif;
+    font-family:microsoft jhenghei,Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height:200%;
 }
 
 .ins-block-head{
@@ -48,6 +50,7 @@ body{
 
 .mark-h2{
     display:inline-block;
+    border-bottom: 3px solid #e0e0e0;
     &.mark-h2-signup::before{
         background-image:url('/images/icon-h2-signup.svg');
     }
